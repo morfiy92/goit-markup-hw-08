@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: var(--main-font);
+	font-style: normal;
+
+	&.modal-open {
+		overflow: hidden;
+	}
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.address {
+	font-style: normal;
+}
+
+img {
+	display: block;
+}

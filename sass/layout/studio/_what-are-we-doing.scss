@@ -1,0 +1,46 @@
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+	.what-are-we-doing {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.what-are-we-doing {
+		padding-bottom: 94px;
+		padding-top: 94px;
+
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&-wpapper {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 27px 0px;
+
+			font-family: var(--main-font);
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 16px;
+			text-align: center;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+
+			color: var(--third-color);
+			background-color: rgba(47, 48, 58, 0.8);
+		}
+
+		&-list-item {
+			position: relative;
+			width: calc((100% - 60px) / 3);
+			margin-right: 30px;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
